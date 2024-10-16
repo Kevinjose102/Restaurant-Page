@@ -1,3 +1,21 @@
+html{
+    width: 100vw;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+}
+
 body{
-    background-color: firebrick;
+    background-image: url("./pexels-brigitte-tohm-36757-143640.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: auto;
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+button{
+    padding: 10px;
 }
