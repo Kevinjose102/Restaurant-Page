@@ -12,7 +12,7 @@ const content = document.querySelector("#content")
 home();
 
 homeBtn.addEventListener("click", () => {
-    home();
+    home()
 })
 
 menuBtn.addEventListener("click", () => {
@@ -20,5 +20,5 @@ menuBtn.addEventListener("click", () => {
 })
 
 aboutBtn.addEventListener("click", () => {
-    content();
+    about();
 })
