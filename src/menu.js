@@ -1,6 +1,6 @@
 function menu() {
     const menu = document.createElement("div");
-    menu.classList.add("menu")
+    menu.classList.add("menu-content")
 
     menu.appendChild(
         createMenuItem(
