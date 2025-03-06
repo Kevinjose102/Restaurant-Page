@@ -4,10 +4,11 @@ html{
     margin: 0;
     padding: 0;
     overflow: auto;
+    overflow: hidden;
 }
 
 body{
-    background-image: url("./pexels-rajesh-tp-749235-160weqweqw0727.jpg");
+    background-image: url("./burger-background-desktop.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -19,6 +20,8 @@ body{
 
 header{
     height: 30%;
+    width: 100%;
+    overflow: hidden;
 }
 
 .logo{
@@ -28,6 +31,7 @@ header{
     text-align: center;
     text-shadow: -5px 5px 0 rgb(129, 106, 53), 5px -5px 0 rgb(129, 106, 53), 5px 5px 0 rgb(129, 106, 53), 5px 5px 0 rgb(129, 106, 53);
     background-color: rgba(0, 0, 0, 0.299);
+    animation: slide-logo 3s ease-in-out;
 }
 
 .navbar{
@@ -43,7 +47,7 @@ header{
     height: 90px;
     width: 100%;
     background-color: rgba(0, 0, 0, 0);
-    font-size: 30px;
+    font-size: 35px;
     color: rgba(233, 158, 29, 0.938);
     font-weight: bold;
     font-family: "Chewy";
@@ -51,7 +55,7 @@ header{
 }
 
 .home:hover, .menu:hover, .about:hover{
-    background-color: rgba(0, 0, 0, 0.332);
+    background-color: rgba(0, 0, 0, 0.466);
     cursor: pointer;
 }
 .home:active, .menu:active, .about:active{
@@ -60,7 +64,7 @@ header{
 
 .main-page{
     display: flex;
-    gap: 100px;
+    gap: 30px;
     justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
@@ -79,30 +83,55 @@ header{
     padding: 0;
     margin: 0;
     text-align: center;
+    animation: slideIn 1.5s ease-out;
 }
 
 .buynow {
     border: none;
-    width: 220px;
-    height: 100px;
-    border-radius: 10px;
-    font-size: 30px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 250px;
+    height: 90px;
+    border-radius: 17px;
+    font-size: 33px;
+    font-family: 'Arial', 'Helvetica', 'sans-serif';
     font-weight: bolder;
-    background-color: rgba(0, 0, 0, 0.332);
-    color: bisque;
+    background-color: rgba(255, 228, 196, 0.759);
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.472);
+    color: rgb(59, 36, 7);
+    transition: all 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 13px;
 }
 
 .buynow:hover {
     cursor: pointer;
-    background-color: rgba(0, 0, 0, 0.539);
+    background-color: rgba(255, 228, 196, 0.816);
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.826);
+    transition: all 0.3s ease;
 }
 
+.burger-logo {
+    transform: scale(0.8);
+    padding-left: 15px;
+}
+.divider {
+    border-top: 2px solid rgba(255, 140, 0, 0.5); /* Orange divider with transparency */
+    margin: 20px 0; /* Adds space around the divider */
+    width: 100%; /* Adjust width as needed */
+    height: 2px;
+    background-color: rgba(255, 140, 0, 0.5);
+    margin: 20px auto; /* Center the divider */
+}
+
+
 .timing {
-    color: rgb(255, 205, 105);
-    font-size: 33px;
+    color: rgb(255, 170, 0);
+    font-size: 35px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: 700;
+    animation: fadeIn 2s ease;
 }
 
 .timing1 {
@@ -115,8 +144,45 @@ header{
     padding-bottom: 20px;
 }
 
+.timings-together {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 @media only screen and (max-width: 1080px){
     body {
-        background-image: url("./Screenshot\ from\ 2025-03-04\ 18-28-11.png");
+        background-image: url("./burger-background-phone.png");
+        font-size: smaller;
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slide-logo {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
     }
 }

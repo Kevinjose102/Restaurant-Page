@@ -1,5 +1,6 @@
 const about = function(){
-    //code
+    const content = document.getElementById("content");
+    content.innerHTML = '';
 }
 
 export default about;
