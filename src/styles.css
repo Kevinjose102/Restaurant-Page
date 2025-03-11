@@ -228,6 +228,34 @@ header{
     margin-top: 0;
 }
 
+.chef-image {
+    width: 800px;
+    height: auto;
+    border: 30px solid rgba(0, 0, 0, 0.385);    
+    margin-left: 130px;
+    margin-top: 50px;
+    border-radius: 50%;
+}
+.about-content {
+    width: 100%;
+    display: inline-block;
+    position: relative;
+}
+
+.about-content > .quote {
+    width: 600px;
+    font-size: 30px;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    overflow: visible;
+    position: absolute;
+    top: 37%;
+    left: 45%;
+    background-color: rgba(0, 0, 0, 0.44);
+    padding: 20px;
+    animation: none;
+}
+
 @media only screen and (max-width: 1080px){
     body {
         background-image: url("./burger-background-phone.png");
