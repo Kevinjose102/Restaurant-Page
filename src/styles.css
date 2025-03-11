@@ -68,6 +68,12 @@ header{
     justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
+    overflow-y: scroll;
+    transform: scale(0.7);
+}
+
+.main-page::-webkit-scrollbar {
+    display: none;
 }
 
 #content{
@@ -157,6 +163,7 @@ header{
     overflow-y: scroll;
     column-gap: 200px;
     row-gap: 60px;
+    transform: scale(0.7);
 }
 
 .menu-item > p{
@@ -240,6 +247,7 @@ header{
     width: 100%;
     display: inline-block;
     position: relative;
+    transform: scale(0.7);
 }
 
 .about-content > .quote {
