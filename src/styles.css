@@ -164,6 +164,7 @@ header{
     column-gap: 200px;
     row-gap: 60px;
     transform: scale(0.7);
+    height: 760px;
 }
 
 .menu-item > p{
